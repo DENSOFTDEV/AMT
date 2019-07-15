@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/device_id_layout"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    tools:context=".Sim_Serial">
+
+    <TextView
+        android:id="@+id/device_id_title"
+        android:layout_width="match_parent"
+        android:text="Scan Sim Serial"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/camera_layout"
+        android:layout_below="@+id/device_id_title"
+        android:layout_marginTop="20dp"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:minHeight="200dp">
+
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/camera_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/layout_1"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Flash Light"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_flash_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/layout_2"
+            android:padding="10dp"
+            android:layout_below="@id/layout_1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Shutter Sound"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_shutter_sound"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">A.M.T</string>
+    <string name="FACEBOOK_APP_ID">609747906179937</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">0063cbbbceafe8b21f6c16a5ce701e82</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

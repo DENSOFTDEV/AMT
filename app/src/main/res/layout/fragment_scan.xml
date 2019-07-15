@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ScanFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/app_name"
+           android:layout_marginTop="20dp"
+           android:text="ANTENNA MONITOR"
+           android:textAlignment="center"
+           android:textSize="20dp"
+           android:padding="20dp"
+           android:textStyle="bold"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+
+       <android.support.v7.widget.CardView
+           android:layout_below="@id/app_name"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="5dp"
+           android:layout_margin="40dp"
+           app:cardElevation="8dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/scan_title"
+                   android:gravity="center_horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="TAP TO SCAN"
+                   android:layout_margin="20dp"
+                   android:textSize="20sp"
+                   android:textStyle="bold"/>
+
+               <TextView
+                   android:id="@+id/device_id"
+                   android:layout_below="@id/scan_title"
+                   android:gravity="center_horizontal"
+                   android:textAlignment="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Device Id"
+                   android:textSize="20sp"
+                   android:layout_margin="20dp"
+                   android:textStyle="bold"/>
+
+               <TextView
+                   android:id="@+id/sim_serial"
+                   android:layout_below="@id/device_id"
+                   android:textAlignment="center"
+                   android:gravity="center_horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="20dp"
+                   android:hint="Sim serial"
+                   android:textSize="20sp"
+                   android:textStyle="bold"/>
+
+
+               <Button
+                   android:id="@+id/validate_btn"
+                   android:layout_below="@+id/sim_serial"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="18sp"
+                   android:layout_margin="20dp"
+                   android:text="Validate"/>
+
+           </RelativeLayout>
+
+
+
+       </android.support.v7.widget.CardView>
+
+   </RelativeLayout>
+
+</FrameLayout>

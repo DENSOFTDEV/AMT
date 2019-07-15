@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/scan"
+        android:icon="@drawable/ic_scan_black_24dp"
+        android:title="Scan"/>
+
+    <item android:id="@+id/report"
+        android:icon="@drawable/ic_report_black_24dp"
+        android:title="Report"/>
+
+</menu>
